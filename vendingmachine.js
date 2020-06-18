@@ -111,7 +111,6 @@ exports.requestProduct = (product) => {
   return change;
 };
 
-
 function extractCoins(coinType) {
   const coin = coins[coinType];
 
@@ -120,6 +119,7 @@ function extractCoins(coinType) {
     coin.noAvailable--;
   }
 }
+
 exports.returnChange = () => {
   let change = exports.currentInCents;
 
